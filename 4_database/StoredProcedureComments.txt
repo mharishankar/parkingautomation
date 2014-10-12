@@ -1,0 +1,97 @@
+MsSQL does not permit in-line comments on Stored Procedures. Hence the comments for each StoredProcedure is given below:
+getSpots:
+/* This procedure is used to get the nunmber of spots in each floor of the garage.It takes no input, and looks into the garage
+table and reads the singular value from the column called "spots" and returns this.This procedure modifies the tables member, 
+member_address, and member_login.  Variables were selected
+carefully to be self explanatory. */
+
+getFloor:
+/*This procedure is used to get the number of floors in the garage.It takes no input, and looks into the garage
+table and reads the singular value from the column called "floors" and returns this.This procedure modifies the 
+tables member, member_address, and member_login.  Variables were selected carefully to be self explanatory. */
+
+setGarage:
+/*This procedure is used to set the number of floors and spots in the garage when the admin first logs into the system.
+The garage is configured once this procedure is called once. It takes as input the number of floors and spots in each floor
+of the garage. It modifies the table called Garage. Variables were selected carefully to be self-explanatory. */
+
+getOccupancy:
+/*This procedure is used to return the status of occupancy of a spot from the reserve_parking table. It takes as input a spot ID, 
+and returns an integer. A value of 1 indicates that the spot is occupied. A value of 2 indicates that it is overstaying, and a 
+value of 3 indicates that the spot is a noshow. It procedure does not modify any table. Variables were selected carefully to be 
+self-explanatory.*/
+
+setOccupancy:
+/*This procedure is used to set the status of occupancy of a spot. It takes as input a spot ID, and an integer that indicates the
+occupancy status.A value of 1 indicates that the spot is occupied. A value of 2 indicates that it is overstaying, and a value of 3 
+indicates that the spot is a noshow. It procedure does not modify any table. Variables were selected carefully to be self-explanatory.*/
+
+setLogHistory:
+/*This procedure is used to add a log of reservation to the logHistory. It takes no input and neither returns anything. This procedure,
+when called, looks into the reserve_parking_online table, and adds expired reservations to logHistory table, and then delets these
+expired reservations from the running table reserve_parking_online. This procedure modifies reserve_parking_online and logHistory tables.
+Variable names were chosen to be self explanatory.*/
+
+getLogHistory:
+/*This procedure is used to return the past garage usage of a member. It takes as input the memberid and returns the past garage
+usage history in SqlDataReader which is then parsed into an array. This procedure modifies no table. Variables were selected carefully
+to be self-explanatory.*/
+
+addNewCustomer:
+/* This procedure is used to create a new member while registration. A member id is assigned to each user. The values
+ provided by the user while registration are fed as input to this procedure. The table fields are set to the provided 
+input values. This procedure modifies the tables member, member_address, and member_login.  Variables were selected
+ carefully to be self explanatory.*/
+
+addReservationToDatabase:
+/*This procedure is used to create a reservation for a registered customer (has a member id). This assigns a reservation 
+id. One of the inputs, member id should be extracted from the database. The other inputs such as reservation start and end
+ date time should be the values provided by the user. This procedure modifies the reserve_parking_online table. Variables 
+were selected carefully to be self explanatory.*/
+
+create_member:
+/*This procedure is used to adda new member to the database.It takes in as input member registration details and mofies
+member, member_login and member_address tables to put in the data. The tables have foreign keys and contraints set so that
+each memberid from member is associated with the ID in member_login and member_address. More than one member with the
+same details is not allowed, and upon trying to input more than 2 same members, the procedure throws an error. This 
+procedure modifies the table member, member_login and member_address. Variable names were carefully selected to be
+self explanatory.*/
+
+deleteReservationFromDatabase:
+/*This procedure is used to cancel a reservation made by a registered reserved user. One of the inputs, member id should
+ be extracted from the database. The other inputs such as the start and end date time of the reservation that needs to be 
+cancelled should be the values provided by the user. This procedure modifies the reserve_parking_online table. Variables 
+were selected carefully to be self explanatory.*/
+
+getAmountDue:
+/*This procedure is used to retrieve the amount owed by a registered customer at any given time. This takes a input the 
+member id. This procedure looks up the Sales_Account table to retrieve the required information.  Variables were selected
+ carefully to be self explanatory. */
+
+getMemberDetails:
+/*This procedure is used to retrieve details of a member given the license plate number associated with him. This procedure
+takes as input a license plate number. It then does a lookup inside table reserve_parking_online and searches it for row 
+whose carPlateNo matches the input given. This row is returned back. This procedure does not modify any table. Variables 
+were selected carefully to be self explanatory. */
+
+getMemberDetailswithUsername:
+/*This procedure is used to retrieve details of a member given a string associated with the member's username.It first
+searches for a row in member_login table where the userName = input string.Once this row it found, it looks up the memberid
+of the member returned, and uses this ID to do a lookup in reserve_parking_online table . It returns the row containing
+this memberid, and hence the user details are retrieved. Note: We call a procedure verifyIsUser that verifies if a username
+password match is found for an input. Only after this check passes is this procedure called. Thats why the password string
+is not used in this procedure. This procedure does not modify any table. Variables were selected carefully to be self 
+explanatory. */
+
+isRegisteredPlate:
+/* This procedure is used to verify if an input license plate is sotred in the database or not, that is, if a user is 
+associated with that license or not. It does a lookup in member table and searches for a row where plateNo matches the 
+input string. It returns the number of rows that are extracted as a result of this query. This procedure does not modify
+any table. Variables were selected carefully to be self explanatory*/
+
+verifyIfUser
+/* This procedure is used to verify if a username/password set stored in the database, that is, to verify log-in 
+information. The inputs are username and password strings. member_login table is queried to determine if there exists
+a row whose userName and user_password fields match the input strings. The procedure returns the number of rows output.
+If there exists such a number, 1 should be the ouput. Else 0. Any number other than 1 and 0 will never be output. This
+procedure does not modify any tables. Variabble names were selected carefully to be self explanatory. */

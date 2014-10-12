@@ -1,0 +1,283 @@
+﻿*
+{
+padding:0px;
+margin:0px;
+/* border-style:dotted; */
+}
+
+
+#info
+{
+position:absolute;
+top:100px;
+left:310px;
+}
+
+.modalBackground
+{
+      background-color: Yellow;
+      filter: alpha(opacity=60);
+      opacity: 0.6;
+}
+ 
+.modalPopup
+{
+      background-color:#ffffdd;
+      border-width:3px;
+      border-style:solid;
+      border-color:Gray;
+      padding:5px;
+      width: 300px;
+      height:100px;
+}
+.BreadCrumbs
+{
+font-family:Arial, Sans-Serif;
+font-size:1.2em;
+font-weight:normal;
+color:gray;
+position:relative;
+left:5px;
+top:5px;
+}
+#UsaBackground
+{
+position:relative;
+top:30px;
+left:0px;
+}
+
+.cpHeader
+{
+color: white;
+background-color: #719DDB;
+font: bold 11px auto "Trebuchet MS", Verdana;
+font-size: 12px;
+cursor: pointer;
+width:59%;
+height:18px;
+padding: 4px;           
+        
+}
+
+.cpBody6
+{
+background-color: #DCE4F9;
+font: normal 11px auto Verdana, Arial;
+border: 1px gray;               
+width:59%;
+padding: 4px;
+padding-top: 7px;
+        }  
+
+.cpBody5
+{
+background-color: #DCE4F9;
+font: normal 11px auto Verdana, Arial;
+border: 1px gray;               
+width:59%;
+padding: 4px;
+padding-top: 7px;
+        }  
+.cpBody4
+{
+background-color: #DCE4F9;
+font: normal 11px auto Verdana, Arial;
+border: 1px gray;               
+width:59%;
+padding: 4px;
+padding-top: 7px;
+        }  
+.cpBody3
+{
+background-color: #DCE4F9;
+font: normal 11px auto Verdana, Arial;
+border: 1px gray;               
+width:59%;
+padding: 4px;
+padding-top: 7px;
+        }      
+.cpBody2
+{
+background-color: #DCE4F9;
+font: normal 11px auto Verdana, Arial;
+border: 1px gray;               
+width:59%;
+padding: 4px;
+padding-top: 7px;
+        }      
+.cpBody
+{
+background-color: #DCE4F9;
+font: normal 11px auto Verdana, Arial;
+border: 1px gray;               
+width:59%;
+padding: 4px;
+padding-top: 7px;
+        }      
+body 
+{
+font-family:Arial, Sans-Serif;
+color:Black;
+font-size: 62.5%;
+margin-left:17%;
+background-position: centre;
+background-color:#CEF0F0;
+}
+#Main
+{
+margin-top:0px;
+margin-left:0%;
+}
+p
+{
+padding:2em;
+}
+ul
+{
+padding-top: .7em;
+padding-left: 5px;
+margin: 0 0 0 1.25em;
+}
+li
+{
+padding: 0px 0px 10px 0px;
+list-style-position:outside;
+}
+
+
+.BannerSection
+{
+position:absolute;
+top:0px;
+left:0px;
+width:600px;
+height:25%;
+float:left;
+background-color: Transparent;
+}
+
+
+
+.ParkingGarageLogo
+{
+height:200px;
+width:300%;
+background-color:Transparent;
+position:relative;
+min-width: 500px;
+}
+
+.MenuSection
+{
+top: 0px;
+left:0px;
+width:80%;
+height:75px;
+min-width:500px;
+background-color:White;
+position:relative;
+text-align:left;
+}
+.Menu
+{
+left:0px;
+margin-left:0px;
+margin-right:0px;
+font-family:Arial, Sans-Serif;
+font-size:1.2em;
+color:Navy;
+background-color:Transparent;
+z-index:999;
+}
+.SubMenu
+{
+left:0px;
+margin-left:0px;
+margin-right:0px;
+font-family:Arial, Sans-Serif;
+font-size:1.2em;
+color:Navy;
+background-color:Transparent;
+border-color:Navy;
+border-style:solid;
+border-width:1px;
+z-index: 999;
+}
+
+.PageHeader
+{
+background-color: #ffffff;
+}
+.ContentArea
+{
+height: 100%;
+width: 80%;
+left:0px;
+position:relative;
+text-align:left;
+background-color:White;
+/* background-image:url(Graphics/SahartiTileWideBlue.gif);
+background-image:url(Graphics/SahartiTileWhiteToGray.gif);
+background-repeat:repeat-y;
+ */
+}
+.BodyPanel
+{
+width:80%;
+left: 0px;
+}
+.ContentPanel
+{
+Padding: 0px 0px 0px 0px;
+width:100%;
+}
+
+.FooterSection
+{
+color:Navy;
+text-align:center;
+font-size:1.2em;
+margin-top: 30%;
+padding: 0px;
+bottom:0px;
+width:585px;
+position:relative;
+}
+.PoweredByAsp
+{
+margin-left:770px;
+margin-top:0;
+margin-bottom:0px;
+background-color:Transparent;
+position:relative;
+}
+
+.SectionListBody tr td 
+{
+padding-top:2px;
+}
+
+.ClearFloats
+{
+clear:both;
+}
+
+.BreadCrumbs
+{
+font-family:Arial, Sans-Serif;
+font-size:1.2em;
+font-weight:normal;
+color:gray;
+position:relative;
+left:5px;
+top:5px;
+}
+
+#ContactUsSection
+{
+position:relative;
+}
+.modalBackground {
+    background-color: Gray;
+} 

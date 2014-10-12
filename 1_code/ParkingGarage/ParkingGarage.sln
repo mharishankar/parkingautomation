@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ParkingGarage", "..\..\WebSites\ParkingGarage\", "{44231C5C-C6F2-440C-BAB2-683EE56626B3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/ParkingGarage"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\ParkingGarage\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ParkingGarage\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ParkingGarage"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\ParkingGarage\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ParkingGarage\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49952"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44231C5C-C6F2-440C-BAB2-683EE56626B3}.Debug|.NET.ActiveCfg = Debug|.NET
+		{44231C5C-C6F2-440C-BAB2-683EE56626B3}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
